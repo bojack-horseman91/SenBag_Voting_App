@@ -13,6 +13,6 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 app.use("/api/location",location_router)
-app.listen(port, () => {
+app.listen(process.env.PORT, () => {
   console.log(`Example app listening on port ${port}`)
 })
